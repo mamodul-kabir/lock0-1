@@ -1,6 +1,6 @@
 # lock0-1  
 
-Lightweight Windows app that shows the current **Caps Lock status** on screen — perfect for laptops without a physical Caps Lock LED.  
+Lightweight Windows utility that shows the current **Caps Lock status** on screen — perfect for laptops without a physical Caps Lock LED.  
 
 ## Features  
 - Displays Caps Lock state visually.  

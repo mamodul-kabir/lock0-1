@@ -30,3 +30,9 @@ If you want lock0-1 to run automatically when you log in:
 1. Press **Win + R**, type **`shell:startup`**, and press **Enter**.
 2. Copy the compiled **`lock0-1.exe`** (or a shortcut to it) into the opened folder.
 3. It will now start automatically with Windows.
+
+## Recommended Devices
+
+This utility is especially useful for devices that **do not have a built-in Caps Lock LED** or have **damaged LED indicators**. Some recommended model(s):
+
+- **Gigabyte**: G5 KE (my device)

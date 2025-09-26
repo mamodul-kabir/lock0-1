@@ -1,10 +1,17 @@
+#define GLFW_EXPOSE_NATIVE_WIN32
 #include <GLFW/glfw3.h>
+#include <GLFW/glfw3native.h>
 #include <iostream> 
 #include <windows.h>
 
 using namespace std;
 GLFWwindow* window;
 
+void hide_window(GLFWwindow* window) {
+    glfwHideWindow(window);
+    SetWindowLong(glfwGetWin32Window(window), GWL_EXSTYLE, WS_EX_TOOLWINDOW);
+    glfwShowWindow(window);
+}
 
 bool isCapsLockOn() {
     return (GetKeyState(VK_CAPITAL) & 0x0001) != 0;
@@ -47,7 +54,7 @@ int main(void)
     window = glfwCreateWindow(7, 80, "", NULL, NULL);
     
     glfwSetWindowPos(window, 0, 0);
-    glfwShowWindow(window);
+    hide_window(window); 
 
     if (!window)
     {
